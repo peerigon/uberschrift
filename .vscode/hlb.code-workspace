@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"name": "core",
+			"path": "../packages/core"
+		},
+		{
+			"name": "react",
+			"path": "../packages/react"
+		},
+		{
+			"name": "docs",
+			"path": "../apps/docs"
+		}
+		{
+			"name": "root",
+			"path": ".."
+		}
+	]
+}
