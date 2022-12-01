@@ -1,6 +1,0 @@
-{
-	"extends": [
-		"peerigon/presets/prettier-typescript-react.js",
-		"../../.eslintrc.json"
-	]
-}
