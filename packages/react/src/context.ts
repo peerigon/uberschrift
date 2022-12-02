@@ -8,9 +8,10 @@ export const useHx = (increment?: number): Level => {
 
 	return useMemo(
 		() =>
-			currentLevel
-				? increaseLevel(currentLevel, increment)
-				: DEFAULT_LEVEL,
+			increaseLevel(
+				currentLevel ?? DEFAULT_LEVEL,
+				currentLevel ? increment : 0
+			),
 		[currentLevel, increment]
 	);
 };

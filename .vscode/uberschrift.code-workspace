@@ -11,7 +11,7 @@
 		{
 			"name": "docs",
 			"path": "../apps/docs"
-		}
+		},
 		{
 			"name": "root",
 			"path": ".."
