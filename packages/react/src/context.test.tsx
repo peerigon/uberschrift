@@ -20,5 +20,7 @@ describe("context.ts", () => {
 			renderHook(() => useHx(level), { wrapper }).result.current;
 
 		expect(run(1)).toBe("h4");
+		expect(run(3)).toBe("h6");
+		expect(run(5)).toBe("h6");
 	});
 });
