@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { useHx, Context } from "./context";
 
 describe("context.ts", () => {
-	test("useHx()", () => {
+	test("useHx() outside of provider", () => {
 		const run = (level?: number) =>
 			renderHook(() => useHx(level)).result.current;
 
@@ -12,7 +12,7 @@ describe("context.ts", () => {
 		expect(run(5)).toBe("h6");
 	});
 
-	test("", () => {
+	test("useHx()", () => {
 		const wrapper: React.FC<{ children: ReactNode }> = ({ children }) => (
 			<Context.Provider value="h3">{children}</Context.Provider>
 		);
