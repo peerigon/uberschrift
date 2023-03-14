@@ -20,6 +20,7 @@ const headingComponents: Record<Level, HeadingComponent> = fromEntries(
 		({ children, level: markdownLevel }) => {
 			const derivedLevel = useHx(markdownLevel - 1);
 
+			// eslint-disable-next-line no-console
 			console.log({ markdownLevel, derivedLevel, children });
 
 			return (

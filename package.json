@@ -10,7 +10,6 @@
 		"build:docs": "pnpm --filter docs build",
 		"build:react": "pnpm --filter react build",
 		"build:packages": "pnpm --filter \"./packages/**\" -r build",
-		"lint:root": "eslint --max-warnings 0 --cache --ext js,jsx,cjs,mjs,ts,tsx --ignore-path .gitignore .",
 		"lint": "pnpm -r lint",
 		"test": "pnpm -r test",
 		"watch:core": "pnpm --filter core watch",

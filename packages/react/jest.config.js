@@ -1,10 +1,5 @@
 module.exports = {
-	roots: ["<rootDir>/src"],
-	transform: {
-		"^.+\\.tsx?$": "ts-jest",
-	},
+	extends: "@uberschrift/config/jest.config.js",
 	testEnvironment: "jest-environment-jsdom",
 	setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
-	testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
-	moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
 };

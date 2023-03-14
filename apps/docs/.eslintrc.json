@@ -1,9 +1,0 @@
-{
-	"extends": [
-		"peerigon/presets/prettier-typescript-react.js",
-		"plugin:@next/next/recommended",
-		"../../.eslintrc.json"
-	],
-
-	"ignorePatterns": ["next-env.d.ts"]
-}
