@@ -1,0 +1,18 @@
+{
+	"name": "@uberschrift/tsconfig",
+	"version": "1.0.0",
+	"description": "",
+	"author": "developers@peerigon.com",
+	"license": "Unlicense",
+	"type": "module",
+	"devDependencies": {
+		"tsup": "^6.6.3"
+	},
+	"exports": {
+		"./tsup": {
+			"import": "./tsup.base.js",
+			"types": "./tsup.d.ts"
+		},
+		"./tsconfig.json": "./tsconfig.json"
+	}
+}

@@ -7,5 +7,5 @@
 		"strict": true,
 		"skipLibCheck": true
 	},
-	"include": ["*.ts"]
+	"include": ["*.ts", "tsup.base.js"]
 }

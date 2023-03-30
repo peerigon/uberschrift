@@ -1,6 +1,6 @@
 module.exports = {
 	extends: [
-		"./node_modules/@uberschrift/config/.eslintrc.js",
+		"@uberschrift/eslint-config/base",
 		"peerigon/presets/prettier-typescript-react.js",
 	],
 	parserOptions: {

@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/no-relative-packages
-import { defineConfig } from "./node_modules/@uberschrift/config/tsup.base";
+import { defineConfig } from "@uberschrift/tsconfig/tsup";
 
 export default defineConfig({
 	entry: [__dirname + "/src/*"],

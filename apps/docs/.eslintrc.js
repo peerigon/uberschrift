@@ -2,7 +2,7 @@ module.exports = {
 	extends: [
 		"peerigon/presets/prettier-typescript-react.js",
 		"plugin:@next/next/recommended",
-		"./node_modules/@uberschrift/config/.eslintrc.js",
+		"@uberschrift/eslint-config/base",
 	],
 	parserOptions: {
 		project: "tsconfig.json",

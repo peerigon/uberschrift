@@ -20,14 +20,16 @@
 		"@testing-library/react": "^13.4.0",
 		"@types/jest": "^29.2.3",
 		"@types/react": "18.0.25",
-		"@uberschrift/config": "workspace:*",
 		"jest": "^29.3.1",
 		"jest-environment-jsdom": "^29.3.1",
 		"react": "18.2.0",
 		"react-markdown": "^8.0.4",
 		"rimraf": "^3.0.2",
 		"ts-jest": "^29.0.3",
-		"typescript": "^4.9.3"
+		"typescript": "^4.9.3",
+		"@uberschrift/eslint-config": "workspace:*",
+		"@uberschrift/tsconfig": "workspace:*",
+		"@uberschrift/jestconfig": "workspace:*"
 	},
 	"dependencies": {
 		"@uberschrift/core": "workspace:*",

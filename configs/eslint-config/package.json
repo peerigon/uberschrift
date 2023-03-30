@@ -1,0 +1,13 @@
+{
+	"name": "@uberschrift/eslint-config",
+	"version": "1.0.0",
+	"description": "",
+	"author": "developers@peerigon.com",
+	"license": "Unlicense",
+	"devDependencies": {
+		"tsup": "^6.6.3"
+	},
+	"exports": {
+		"./base": "./.eslintrc.js"
+	}
+}

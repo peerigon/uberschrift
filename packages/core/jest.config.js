@@ -1,3 +1,3 @@
 module.exports = {
-	extends: "@uberschrift/config/jest.config.js",
+	extends: "@uberschrift/jest.config.js",
 };

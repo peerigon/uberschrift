@@ -20,9 +20,10 @@ importers:
       '@types/node': 18.11.10
       '@types/react': 18.0.25
       '@types/react-dom': 18.0.9
-      '@uberschrift/config': workspace:*
       '@uberschrift/core': workspace:^1.0.0
+      '@uberschrift/eslint-config': workspace:*
       '@uberschrift/react': workspace:^1.0.0
+      '@uberschrift/tsconfig': workspace:*
       eslint: ^8.28.0
       eslint-config-peerigon: ^33.3.0
       eslint-plugin-jsx-a11y: ^6.6.1
@@ -57,9 +58,22 @@ importers:
       react-markdown: 8.0.4_fan5qbzahqtxlm5dzefqlqx5ia
       typescript: 4.9.3
     devDependencies:
-      '@uberschrift/config': link:../../packages/config
+      '@uberschrift/eslint-config': link:../../configs/eslint-config
+      '@uberschrift/tsconfig': link:../../configs/tsconfig
 
-  packages/config:
+  configs/eslint-config:
+    specifiers:
+      tsup: ^6.6.3
+    devDependencies:
+      tsup: 6.6.3
+
+  configs/jestConfig:
+    specifiers:
+      tsup: ^6.6.3
+    devDependencies:
+      tsup: 6.6.3
+
+  configs/tsconfig:
     specifiers:
       tsup: ^6.6.3
     devDependencies:
@@ -69,7 +83,9 @@ importers:
     specifiers:
       '@jest/types': ^29.3.1
       '@types/jest': ^29.2.3
-      '@uberschrift/config': workspace:*
+      '@uberschrift/eslint-config': workspace:*
+      '@uberschrift/jestconfig': workspace:*
+      '@uberschrift/tsconfig': workspace:*
       jest: ^29.3.1
       jest-environment-jsdom: ^29.3.1
       rimraf: ^3.0.2
@@ -84,7 +100,9 @@ importers:
       ts-jest: 29.0.3_wcjxlcwfjvs73rqh2tjbxyoefa
       typescript: 4.9.3
     devDependencies:
-      '@uberschrift/config': link:../config
+      '@uberschrift/eslint-config': link:../../configs/eslint-config
+      '@uberschrift/jestconfig': link:../../configs/jestConfig
+      '@uberschrift/tsconfig': link:../../configs/tsconfig
 
   packages/react:
     specifiers:
@@ -93,8 +111,10 @@ importers:
       '@testing-library/react': ^13.4.0
       '@types/jest': ^29.2.3
       '@types/react': 18.0.25
-      '@uberschrift/config': workspace:*
       '@uberschrift/core': workspace:*
+      '@uberschrift/eslint-config': workspace:*
+      '@uberschrift/jestconfig': workspace:*
+      '@uberschrift/tsconfig': workspace:*
       jest: ^29.3.1
       jest-environment-jsdom: ^29.3.1
       react: 18.2.0
@@ -112,7 +132,9 @@ importers:
       '@testing-library/react': 13.4.0_react@18.2.0
       '@types/jest': 29.2.3
       '@types/react': 18.0.25
-      '@uberschrift/config': link:../config
+      '@uberschrift/eslint-config': link:../../configs/eslint-config
+      '@uberschrift/jestconfig': link:../../configs/jestConfig
+      '@uberschrift/tsconfig': link:../../configs/tsconfig
       jest: 29.3.1
       jest-environment-jsdom: 29.3.1
       react: 18.2.0

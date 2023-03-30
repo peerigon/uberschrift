@@ -1,5 +1,5 @@
 module.exports = {
-	extends: ["./node_modules/@uberschrift/config/.eslintrc.js"],
+	extends: ["@uberschrift/eslint-config/base"],
 	parserOptions: {
 		project: "tsconfig.json",
 		tsconfigRootDir: __dirname,

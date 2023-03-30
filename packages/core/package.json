@@ -22,6 +22,8 @@
 		"typescript": "^4.9.3"
 	},
 	"devDependencies": {
-		"@uberschrift/config": "workspace:*"
+		"@uberschrift/eslint-config": "workspace:*",
+		"@uberschrift/tsconfig": "workspace:*",
+		"@uberschrift/jestconfig": "workspace:*"
 	}
 }
