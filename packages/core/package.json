@@ -4,10 +4,8 @@
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"scripts": {
-		"prebuild": "rimraf dist",
-		"build": "node build.js",
-		"postbuild": "tsc --declaration --emitDeclarationOnly",
-		"watch": "node build.js --watch",
+		"build": "tsup",
+		"watch": "tsup --watch",
 		"lint": "eslint --max-warnings 0 --cache --ext js,jsx,cjs,mjs,ts,tsx --ignore-path ../../.gitignore .",
 		"test": "jest",
 		"test:unit:watch": "jest --watch"
@@ -22,5 +20,10 @@
 		"rimraf": "^3.0.2",
 		"ts-jest": "^29.0.3",
 		"typescript": "^4.9.3"
+	},
+	"devDependencies": {
+		"@uberschrift/eslint-config": "workspace:*",
+		"@uberschrift/tsconfig": "workspace:*",
+		"@uberschrift/jestconfig": "workspace:*"
 	}
 }

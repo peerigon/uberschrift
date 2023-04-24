@@ -1,4 +1,0 @@
-#!/bin/bash
-package=$1
-
-npx chokidar "packages/$package/src/**" -c "pnpm --filter $package build"
