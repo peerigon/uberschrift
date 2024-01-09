@@ -1,0 +1,11 @@
+{
+	"extends": ["peerigon/presets/typescript-react.js"],
+	"env": {
+		"node": true,
+		"browser": true
+	},
+	"root": true,
+	"rules": {
+		"no-console": "warn"
+	}
+}
