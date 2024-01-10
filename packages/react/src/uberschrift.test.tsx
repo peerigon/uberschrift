@@ -12,7 +12,7 @@ test("renders correct headings", () => {
 	elements.forEach((level) =>
 		queryAllByText(level).forEach((headline) => {
 			expect(headline.tagName).toBe(level.toUpperCase());
-		})
+		}),
 	);
 
 	queryAllByText("h7").forEach((headline) => {

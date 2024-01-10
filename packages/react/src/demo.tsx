@@ -6,5 +6,5 @@ import { TestCase } from "./test-case";
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
 		<TestCase />
-	</React.StrictMode>
+	</React.StrictMode>,
 );

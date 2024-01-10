@@ -52,7 +52,7 @@ uberschrift provides you with two components: one we call `<Hx>` (as in "heading
 ## Usage
 
 ```sh
-npm install @peerigon/uberschrift
+npm install @uberschrift
 ```
 
 ### Example
@@ -60,7 +60,7 @@ npm install @peerigon/uberschrift
 `page.tsx`:
 
 ```tsx
-import { Hx, HxBoundary } from "@peerigon/uberschrift";
+import { Hx, HxBoundary } from "@uberschrift";
 
 <Hx>Outside of the top level: this will be an h1</Hx>
 
@@ -101,7 +101,7 @@ If you want to style these elements, you can do it like this:
 
 ```css
 [aria-level="7"] {
-  font-weight: bold;
+	font-weight: bold;
 }
 ```
 
