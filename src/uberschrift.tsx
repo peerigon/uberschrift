@@ -3,9 +3,9 @@ import { HTMLProps, ReactNode, createContext, useContext } from "react";
 export const Context = createContext<number>(1);
 
 export const HxBoundary: React.FC<{ children: ReactNode }> = ({ children }) => {
-	const level = useContext(Context) + 1;
+	const level = useContext(Context);
 
-	return <Context.Provider value={level}>{children}</Context.Provider>;
+	return <Context.Provider value={level + 1}>{children}</Context.Provider>;
 };
 
 type HxProps = HTMLProps<HTMLHeadingElement> & {
@@ -13,7 +13,8 @@ type HxProps = HTMLProps<HTMLHeadingElement> & {
 };
 
 export const Hx: React.FC<HxProps> = ({ increment, ...props }) => {
-	const level = useContext(Context) + (increment ?? 0);
+	const ctx = useContext(Context);
+	const level = ctx + (increment ?? 0);
 	const Element = `h${level}`;
 
 	if (level < 7) {
