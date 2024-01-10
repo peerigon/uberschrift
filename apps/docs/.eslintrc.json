@@ -1,8 +1,4 @@
 {
 	"root": true,
-	"extends": ["@uberschrift/eslint-config/base.js"],
-	"parser": "@typescript-eslint/parser",
-	"parserOptions": {
-		"project": "./tsconfig.json"
-	}
+	"extends": ["@uberschrift/eslint-config/base.js"]
 }

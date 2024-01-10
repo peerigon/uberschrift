@@ -13,7 +13,7 @@ export const links: LinksFunction = () => [
 	...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
-export default function App() {
+const App = () => {
 	return (
 		<html lang="en">
 			<head>
@@ -33,4 +33,6 @@ export default function App() {
 			</body>
 		</html>
 	);
-}
+};
+
+export default App;

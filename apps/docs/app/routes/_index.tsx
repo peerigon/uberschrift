@@ -3,8 +3,8 @@ import ReadMe from "../README.mdx";
 
 export const meta: MetaFunction = () => {
 	return [
-		{ title: "New Remix App" },
-		{ name: "description", content: "Welcome to Remix!" },
+		{ title: "Uberschrift" },
+		{ name: "description", content: "Magic heading levels for React." },
 	];
 };
 
