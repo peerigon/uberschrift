@@ -3,9 +3,10 @@
 	"type": "module",
 	"version": "0.0.0",
 	"description": "Magic heading levels for React",
+	"main": "dist/index.cjs",
 	"scripts": {
-		"build": "tsup src/index.ts",
-		"dev": "echo 'okay.'",
+		"build": "tsup src/index.ts --dts",
+		"dev": "tsup src/index.ts --watch --dts",
 		"start": "echo 'okay.'",
 		"test": "run-p test:*",
 		"test:lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",

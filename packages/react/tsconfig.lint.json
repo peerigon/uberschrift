@@ -1,8 +1,0 @@
-{
-	"extends": "@uberschrift/tsconfig/base.json",
-	"compilerOptions": {
-		"outDir": "dist"
-	},
-	"include": ["src", "turbo", "*.config.ts"],
-	"exclude": ["node_modules", "dist"]
-}

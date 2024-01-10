@@ -1,24 +1,37 @@
 {
-  "name": "docs",
-  "private": true,
-  "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
-  },
-  "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
-    "prettier": "^3.1.1",
-    "turbo": "latest"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "npm@10.2.3",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+	"name": "@uberschrift/docs",
+	"private": true,
+	"sideEffects": false,
+	"type": "module",
+	"scripts": {
+		"build": "remix build",
+		"dev": "remix dev --manual",
+		"test": "run-p test:*",
+		"test:lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+		"start": "remix-serve ./build/index.js",
+		"test:types": "tsc"
+	},
+	"dependencies": {
+		"@uberschrift/readme": "*",
+		"@uberschrift/react": "*",
+		"@remix-run/css-bundle": "^2.4.1",
+		"@remix-run/node": "^2.4.1",
+		"@remix-run/react": "^2.4.1",
+		"@remix-run/serve": "^2.4.1",
+		"isbot": "^3.6.8",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@remix-run/dev": "^2.4.1",
+		"@types/react": "^18.2.20",
+		"@types/react-dom": "^18.2.7",
+		"@typescript-eslint/eslint-plugin": "^6.7.4",
+		"eslint": "^8.38.0",
+		"npm-run-all": "^4.1.5",
+		"typescript": "^5.1.6"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
 }

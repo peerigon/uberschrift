@@ -1,3 +1,7 @@
 {
-  "extends": "@repo/typescript-config/base.json"
+	"extends": "@uberschrift/tsconfig/base.json",
+	"include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"],
+	"compilerOptions": {
+		"noEmit": true
+	}
 }
