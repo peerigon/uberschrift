@@ -25,4 +25,5 @@ jobs:
         run: |
           cd packages/react
           npm run build
+          npm whoami
           npx semantic-release
