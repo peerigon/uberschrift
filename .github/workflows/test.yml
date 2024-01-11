@@ -10,4 +10,4 @@ jobs:
         env:
           FOO: ${{ secrets.NPM_TOKEN }}
         run: |
-          echo $FOO
+          echo ${#FOO}
