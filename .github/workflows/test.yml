@@ -1,4 +1,4 @@
-name: "foo"
+name: "NPM_TOKEN"
 
 on: pull_request
 
@@ -6,8 +6,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: node
+        uses: actions/setup-node@v3
       - name: 🚀 release
         env:
-          FOO: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          echo ${#FOO}
+          npm whoami
+          echo ${#NPM_TOKEN}
