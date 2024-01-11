@@ -1,5 +1,6 @@
 {
 	"name": "uberschrift",
+	"version": "0.0.0",
 	"scripts": {
 		"build": "turbo build",
 		"dev": "turbo dev",

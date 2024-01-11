@@ -5,7 +5,10 @@
 	"publishConfig": {
 		"access": "public"
 	},
-	"repository": "https://github.com/peerigon/uberschrift",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/peerigon/uberschrift.git"
+	},
 	"description": "Magic heading levels for React",
 	"exports": {
 		".": "./src/index.ts"
