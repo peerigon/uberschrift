@@ -1,0 +1,42 @@
+{
+	"name": "@uberschrift/react",
+	"type": "module",
+	"version": "0.0.0",
+	"description": "Magic heading levels for React",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"scripts": {
+		"build": "tsup src/index.ts --dts",
+		"dev": "echo 'okay.'",
+		"start": "echo 'okay.'",
+		"test": "run-p test:*",
+		"test:lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"test:scripts": "scriptlint --strict --fix",
+		"test:types": "tsc --noEmit",
+		"test:unit": "vitest run"
+	},
+	"author": "developers@peerigon.com",
+	"license": "UNLICENSED",
+	"devDependencies": {
+		"@testing-library/jest-dom": "^6.2.0",
+		"@testing-library/react": "^14.1.2",
+		"@types/react": "^18.2.0",
+		"@types/react-dom": "^18.2.0",
+		"@uberschrift/eslint-config": "*",
+		"@uberschrift/tsconfig": "*",
+		"eslint": "^8.56.0",
+		"jsdom": "^23.2.0",
+		"npm-run-all": "^4.1.5",
+		"react-dom": "^18.2.0",
+		"scriptlint": "^3.0.0",
+		"semantic-release": "^22.0.12",
+		"tsup": "^8.0.1",
+		"typescript": "^5.3.3",
+		"vite": "^5.0.11",
+		"vitest": "^1.1.3"
+	},
+	"peerDependencies": {
+		"react": "^18.2.0"
+	}
+}

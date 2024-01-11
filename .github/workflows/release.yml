@@ -1,0 +1,29 @@
+name: "🚀 Release to npm"
+on:
+  push:
+    branches:
+      - main
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🧺 checkout
+        uses: actions/checkout@v3
+      - name: 🐱 use .nvmrc
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          cache: "npm"
+      - name: 📌 npm install
+        run: npm ci --prefer-offline --no-audit
+      - name: 🧱 build
+        run: npm run build
+      - name: 🚀 release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          cd packages/react
+          npm run build
+          npm publish --dry-run
+          npx semantic-release -d --debug
