@@ -25,4 +25,6 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           cd packages/react
+          npm run build
+          npm publish --dry-run
           npx semantic-release -d --debug
