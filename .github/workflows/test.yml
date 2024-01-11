@@ -1,0 +1,13 @@
+name: "foo"
+
+on: pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚀 release
+        env:
+          FOO: ${{ secrets.NPM_TOKEN }}
+        run: |
+          echo $FOO
