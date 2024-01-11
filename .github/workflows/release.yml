@@ -25,5 +25,4 @@ jobs:
         run: |
           cd packages/react
           npm run build
-          npm publish --dry-run
-          npx semantic-release -d --debug
+          npx semantic-release
