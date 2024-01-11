@@ -1,6 +1,5 @@
 {
 	"name": "@uberschrift/docs",
-	"private": true,
 	"sideEffects": false,
 	"type": "module",
 	"scripts": {
