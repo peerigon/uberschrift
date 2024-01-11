@@ -5,6 +5,8 @@ import { Hx, HxBoundary } from "@uberschrift/react";
 Magic heading levels for React:
 
 ```tsx
+<Hx>I'm the h1!'</Hx>
+
 <HxBoundary>
 	<Hx>I want to be an h2</Hx>
 
@@ -17,9 +19,12 @@ Magic heading levels for React:
 🪄 ✨
 
 ```html
+<h1>I'm the h1!'</h1>
 <h2>I want to be an h2</h2>
 <h3>I will be an h3</h3>
 ```
+
+---
 
 <HxBoundary>
 
@@ -37,7 +42,7 @@ Properly nesting these elements ensures that screen readers and other assistive 
 
 Here's an example of a DOM structure with incorrect heading order:
 
-```
+```html
 <h1>This is the page's main heading</h1>
 
 <h2>This is also fine</h2>
@@ -57,7 +62,9 @@ uberschrift provides you with two components: one we call `<Hx>` (as in "heading
 
 </HxBoundary>
 
-<Hx>Usage</Hx>
+---
+
+<Hx>🛠️ Usage</Hx>
 
 ```sh
 npm install @peerigon/uberschrift
@@ -65,7 +72,7 @@ npm install @peerigon/uberschrift
 
 <HxBoundary>
 
-<Hx>Example</Hx>
+<Hx>📇 Example</Hx>
 
 `page.tsx`:
 
@@ -101,15 +108,15 @@ renders as:
 
 </HxBoundary>
 
-<Hx>FAQ</Hx>
+<Hx>🤯 FAQ</Hx>
 
 <HxBoundary>
 
-<Hx>How does it handle heading elements nested below the 6th level?</Hx>
+<Hx>7️⃣ How does it handle heading elements nested below the 6th level?</Hx>
 
 The [HTML Spec](https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements) only allows h1 through h6 as elements and for most documents this should be more than enough.
 
-That being said: if you find yourself nesting deeper, you can make that possible by leveraging WAI-ARIA attributes, e.g.: `<div role="heading" aria-level="7">…</h7>`. Uberschrift does that for you.
+That being said: if you find yourself nesting deeper, you can make that possible by leveraging WAI-ARIA attributes, e.g.: `<div role="heading" aria-level="7">…</div>`. Uberschrift does that for you.
 
 If you want to style these elements, you can do it like this:
 
@@ -119,9 +126,13 @@ If you want to style these elements, you can do it like this:
 }
 ```
 
-<Hx>How does it work under the hood?</Hx>
+<Hx>🚗 How does it work under the hood?</Hx>
 
 It's a simple case of [React Context](https://react.dev/learn/passing-data-deeply-with-context): `HxBoundary` is merely a nestable context provider, that increments the heading level.
 
 </HxBoundary>
 </HxBoundary>
+
+---
+
+<footer>©2024 Peerigon GmbH</footer>
