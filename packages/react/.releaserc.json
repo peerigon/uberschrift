@@ -1,0 +1,4 @@
+{
+	"defaultBranch": "minimal",
+	"branches": ["minimal", "main"]
+}
