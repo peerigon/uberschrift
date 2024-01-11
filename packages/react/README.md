@@ -4,10 +4,10 @@
 
 ---
 
-[![npm version badge](https://img.shields.io/npm/v/uberschrift?style=flat-square)](https://npmjs.com/package/uberschrift)
-[![dependency badge](https://img.shields.io/librariesio/release/npm/uberschrift?style=flat-square)](https://libraries.io/npm/uberschrift)
-[![Issue badge](https://img.shields.io/github/issues/peerigon/uberschrift?style=flat-square)](https://github.com/peerigon/uberschrift/issues)
-[![CI badge](https://github.com/peerigon/uberschrift/workflows/ci/badge.svg)](https://github.com/peerigon/uberschrift/actions?query=workflow%3Aci)
+[![npm version badge](https://img.shields.io/npm/v/uberschrift?style=flat-square)](https://npmjs.com/package/uberschrift)<br />
+[![dependency badge](https://img.shields.io/librariesio/release/npm/uberschrift?style=flat-square)](https://libraries.io/npm/uberschrift)<br />
+[![Issue badge](https://img.shields.io/github/issues/peerigon/uberschrift?style=flat-square)](https://github.com/peerigon/uberschrift/issues)<br />
+[![CI badge](https://github.com/peerigon/uberschrift/workflows/pull_request/badge.svg)](https://github.com/peerigon/uberschrift/actions/workflows/pull_request.yml)
 
 ---
 
