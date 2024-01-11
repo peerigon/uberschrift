@@ -16,13 +16,13 @@
 ## 🛠️ Usage
 
 ```sh
-npm install @peerigon/uberschrift
+npm install uberschrift
 ```
 
 `page.tsx`:
 
 ```tsx
-import { Hx, HxBoundary } from "@peerigon/uberschrift";
+import { Hx, HxBoundary } from "uberschrift";
 
 <Hx>Outside of the top level: this will be an h1</Hx>
 
