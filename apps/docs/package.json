@@ -16,10 +16,13 @@
 		"@remix-run/node": "^2.4.1",
 		"@remix-run/react": "^2.4.1",
 		"@remix-run/serve": "^2.4.1",
-		"uberschrift": "*",
+		"@tailwindcss/typography": "^0.5.10",
+		"clsx": "^2.1.0",
 		"isbot": "^3.8.0",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"rehype-highlight": "^7.0.0",
+		"uberschrift": "*"
 	},
 	"devDependencies": {
 		"@remix-run/dev": "^2.4.1",

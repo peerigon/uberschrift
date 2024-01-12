@@ -1,4 +1,5 @@
 import { Hx, HxBoundary } from "uberschrift";
+import { Clipboardable } from "./components/Clipboardable";
 
 <Hx>🧢 uberschrift</Hx>
 
@@ -26,22 +27,13 @@ Zero-dependeny magic heading levels for React
 
 ---
 
-<div className="text-center">
-
-Sponsors <br/>
-[<img alt="Peerigon logo" src="https://assets.peerigon.com/peerigon/logo/peerigon-logo-flat-spinat.png" width="150" />](https://peerigon.com)
-
-</div>
-
----
-
 <HxBoundary>
 
 <Hx>🤸 Motivation</Hx>
 
 <HxBoundary>
 
-<Hx>👀 Why chosing the right heading level (h1, h2, …) matters</Hx>
+<Hx>👀 Why heading levels (h1, h2, …) matter</Hx>
 
 Grouping text sections underneath headings adds a logical hierarchy to the contents of a page, contributing to both accessibility and search engine optimization (SEO). Heading elements, ranging from `<h1>` to `<h6>`, represent different levels of importance and organization.
 
@@ -52,18 +44,18 @@ Properly nesting these elements ensures that screen readers and other assistive 
 Here's an example of a DOM structure with incorrect heading order:
 
 ```html
-<h1>This is the page's main heading</h1>
+<h1>This is the page's main heading ✅</h1>
 
-<h2>This is also fine</h2>
+<h2>This is also fine ✅</h2>
 
-<h4>⚠️ UH-OH! This should have been preceded by an h3!</h4>
+<h4>This should have been preceded by an h3! ❌</h4>
 ```
 
 <Hx>🤷 Why is dealing with heading levels difficult?</Hx>
 
 In React projects, component encapsulation often makes chosing the right heading level within these components hard. They are often nested in an unforeseeable way, so the heading you chose to be an `<h3>` could now be used outside of the boundary of an `<h2>`, messing up the order.
 
-<Hx>🧢 What does uberschrift do?</Hx>
+<Hx>🧢 How does uberschrift help?</Hx>
 
 uberschrift provides you with two components: one we call `<Hx>` (as in "heading level x") that you should use for your headings; and one `<HxBoundary>` that you use to structure your document. Within these boundaries, `<Hx>` always choses the correct heading level. If you need to structure your document one level deeper, you wrap your component in a new `<HxBoundary>`.
 
@@ -75,9 +67,11 @@ uberschrift provides you with two components: one we call `<Hx>` (as in "heading
 
 <Hx>🛠️ Usage</Hx>
 
+<Clipboardable content="npm install uberschrift">
 ```sh
 npm install uberschrift
 ```
+</Clipboardable>
 
 <HxBoundary>
 
@@ -85,6 +79,23 @@ npm install uberschrift
 
 `page.tsx`:
 
+<Clipboardable content={`import { Hx, HxBoundary } from "uberschrift";
+
+<Hx>Outside of the top level: this will be an h1</Hx>
+
+<HxBoundary>
+  <Hx>Within the top level: this will be an h2</Hx>
+
+  <HxBoundary>
+    <Hx>Within the 2nd level: this will be an h3</Hx>
+
+    <HxBoundary>
+      <Hx>Within the 3rd level: this will be an h4</Hx>
+    </HxBoundary>
+
+    <Hx>Again within the 2nd level: this will be an h3</Hx>
+  </HxBoundary>
+</HxBoundary>`}>
 ```tsx
 import { Hx, HxBoundary } from "uberschrift";
 
@@ -104,6 +115,7 @@ import { Hx, HxBoundary } from "uberschrift";
   </HxBoundary>
 </HxBoundary>
 ```
+</Clipboardable>
 
 renders as:
 
@@ -129,15 +141,30 @@ That being said: if you find yourself nesting deeper, you can make that possible
 
 If you want to style these elements, you can do it like this:
 
+<Clipboardable content={`[aria-level="7"] {
+	font-weight: bold;
+}`}>
 ```css
 [aria-level="7"] {
 	font-weight: bold;
 }
 ```
+</Clipboardable>
 
 <Hx>🚗 How does it work under the hood?</Hx>
 
 It's a simple case of [React Context](https://react.dev/learn/passing-data-deeply-with-context): `HxBoundary` is merely a nestable context provider, that increments the heading level.
 
 </HxBoundary>
+
+---
+
+<Hx>❤️ Sponsors</Hx>
+
+[<img className="inline" alt="Peerigon GmbH" src="https://assets.peerigon.com/peerigon/logo/peerigon-logo-flat-spinat.png" width="150" />](https://peerigon.com)
+
 </HxBoundary>
+
+---
+
+[Legal Notice](https://www.peerigon.com/en/legal/)

@@ -1,3 +1,12 @@
 {
-	"typescript.tsdk": "node_modules/typescript/lib"
+	"typescript.tsdk": "node_modules/typescript/lib",
+	// This is the greatest improvement in your editing experience.
+	// If your vscode isn't already formatting on save, you're missing out.
+	"editor.formatOnSave": true,
+
+	"tailwindCSS.experimental.classRegex": [
+		["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+		["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+		["tw`([^`]*)"]
+	]
 }
