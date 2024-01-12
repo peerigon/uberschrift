@@ -1,7 +1,11 @@
 {
 	"name": "uberschrift",
-	"type": "module",
 	"version": "0.0.0",
+	"type": "module",
+	"sideEffects": false,
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
 	"publishConfig": {
 		"access": "public"
 	},
@@ -9,14 +13,12 @@
 		"type": "git",
 		"url": "git+https://github.com/peerigon/uberschrift.git"
 	},
-	"description": "Magic heading levels for React",
-	"exports": {
-		".": "./src/index.ts"
-	},
+	"description": "Zero-dependeny magic heading levels for React",
 	"scripts": {
-		"build": "tsup src/index.ts --dts",
-		"dev": "echo 'okay.'",
-		"start": "echo 'okay.'",
+		"build": "tsup src/index.ts --dts --clean --format cjs,esm",
+		"dev": "npm run build -- --watch",
+		"prepublish": "npm run build",
+		"start": "npm run dev",
 		"test": "run-p test:*",
 		"test:lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"test:scripts": "scriptlint --strict --fix",

@@ -6,7 +6,10 @@ import stylesheet from "../tailwind.css";
 export const meta: MetaFunction = () => {
 	return [
 		{ title: "Uberschrift" },
-		{ name: "description", content: "Magic heading levels for React." },
+		{
+			name: "description",
+			content: "Zero-dependeny magic heading levels for React",
+		},
 	];
 };
 
