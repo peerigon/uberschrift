@@ -22,6 +22,8 @@ jobs:
           cache: "npm"
       - name: 📌 npm install
         run: npm ci --prefer-offline --no-audit
+      - name: 🔧 build
+        run: npm run build
       - name: 〽️ pull vercel environment information
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
       - name: 🔧 build project artifacts
