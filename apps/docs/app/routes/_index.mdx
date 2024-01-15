@@ -1,7 +1,5 @@
 import { Hx, HxBoundary } from "uberschrift";
-import { Clipboardable } from "./components/clipboardable";
-
-<Hx>🧢 uberschrift</Hx>
+import { Clipboardable } from "../components/clipboardable";
 
 Zero-dependeny magic heading levels for React
 
@@ -17,7 +15,7 @@ Zero-dependeny magic heading levels for React
 </HxBoundary>
 ```
 
-🪄 ✨
+<div className="magic text-center">🪄 ✨</div>
 
 ```html
 <h1>I'm the h1!'</h1>
@@ -29,11 +27,11 @@ Zero-dependeny magic heading levels for React
 
 <HxBoundary>
 
-<Hx>🤸 Motivation</Hx>
+<Hx>Motivation 🤸</Hx>
 
 <HxBoundary>
 
-<Hx>👀 Why heading levels (h1, h2, …) matter</Hx>
+<Hx>Why heading levels (h1, h2, …) matter 👀</Hx>
 
 Grouping text sections underneath headings adds a logical hierarchy to the contents of a page, contributing to both accessibility and search engine optimization (SEO). Heading elements, ranging from `<h1>` to `<h6>`, represent different levels of importance and organization.
 
@@ -51,11 +49,11 @@ Here's an example of a DOM structure with incorrect heading order:
 <h4>This should have been preceded by an h3! ❌</h4>
 ```
 
-<Hx>🤷 Why is dealing with heading levels difficult?</Hx>
+<Hx>Why is dealing with heading levels difficult? 🤷</Hx>
 
 In React projects, component encapsulation often makes chosing the right heading level within these components hard. They are often nested in an unforeseeable way, so the heading you chose to be an `<h3>` could now be used outside of the boundary of an `<h2>`, messing up the order.
 
-<Hx>🧢 How does uberschrift help?</Hx>
+<Hx>How does uberschrift help? 🧢</Hx>
 
 uberschrift provides you with two components: one we call `<Hx>` (as in "heading level x") that you should use for your headings; and one `<HxBoundary>` that you use to structure your document. Within these boundaries, `<Hx>` always choses the correct heading level. If you need to structure your document one level deeper, you wrap your component in a new `<HxBoundary>`.
 
@@ -65,7 +63,7 @@ uberschrift provides you with two components: one we call `<Hx>` (as in "heading
 
 ---
 
-<Hx>🛠️ Usage</Hx>
+<Hx>Usage 🛠️</Hx>
 
 <Clipboardable content="npm install uberschrift">
 ```sh
@@ -75,7 +73,7 @@ npm install uberschrift
 
 <HxBoundary>
 
-<Hx>📇 Example</Hx>
+<Hx>Example 📇</Hx>
 
 `page.tsx`:
 
@@ -129,15 +127,15 @@ renders as:
 
 </HxBoundary>
 
-<Hx>🤯 FAQ</Hx>
+<Hx>FAQ 🤯</Hx>
 
 <HxBoundary>
 
-<Hx>7️⃣ How does it handle heading elements nested below the 6th level?</Hx>
+<Hx>How does it handle heading elements nested below the 6th level? 7️⃣</Hx>
 
 The [HTML Spec](https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements) only allows h1 through h6 as elements and for most documents this should be more than enough.
 
-That being said: if you find yourself nesting deeper, you can make that possible by leveraging WAI-ARIA attributes, e.g.: `<div role="heading" aria-level="7">…</div>`. Uberschrift does that for you.
+That being said: if you find yourself nesting deeper, you can make that possible by leveraging WAI-ARIA attributes, e.g.: `<div role="heading" aria-level="7">…</div>`. uberschrift does that for you.
 
 If you want to style these elements, you can do it like this:
 
@@ -151,15 +149,26 @@ If you want to style these elements, you can do it like this:
 ```
 </Clipboardable>
 
-<Hx>🚗 How does it work under the hood?</Hx>
+<Hx>How does it work under the hood? 🚗</Hx>
 
-It's a simple case of [React Context](https://react.dev/learn/passing-data-deeply-with-context): `HxBoundary` is merely a nestable context provider, that increments the heading level.
+It's a simple use case of [React Context](https://react.dev/learn/passing-data-deeply-with-context): `HxBoundary` is merely a nestable context provider, that increments the heading level.
+
+In fact, you can use that context with `useHx` if you need it:
+
+```tsx
+import { useHx } from "uberschrift";
+
+const {
+  Element, // string, e.g "h4"
+  level    // number => 4
+} = useHx();
+```
 
 </HxBoundary>
 
 ---
 
-<Hx>❤️ Sponsors</Hx>
+<Hx>Sponsors ❤️</Hx>
 
 [<img className="inline" alt="Peerigon GmbH" src="https://assets.peerigon.com/peerigon/logo/peerigon-logo-flat-spinat.png" width="150" />](https://peerigon.com)
 

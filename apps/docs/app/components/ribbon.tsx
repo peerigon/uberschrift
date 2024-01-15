@@ -2,8 +2,10 @@ import { cn, tw } from "../utils/tailwind";
 import { SvgSprite } from "./svg-sprite";
 
 const className = cn(
-	tw`bg-black text-sm font-bold text-white fixed top-0 right-0 p-2 z-50 w-[16rem] flex no-underline leading-normal justify-center rotate-45 transform translate-x-1/4 translate-y-full`,
-	tw`hover:bg-gray-900 hover:text-white hover:scale-110 transition-transform`,
+	tw`inline-flex align-middle leading-tight justify-center`,
+	tw`font-bold top-0 right-0 z-50 no-underline`,
+	tw`lg:bg-blue-700 lg:text-white lg:text-sm lg:fixed lg:p-2 lg:w-[16rem] lg:rotate-45 lg:translate-x-1/4 lg:translate-y-full`,
+	tw`hover:scale-110 transition-transform`,
 );
 
 export const Ribbon = () => {
@@ -14,11 +16,11 @@ export const Ribbon = () => {
 			aria-label="View source on GitHub"
 		>
 			<SvgSprite
-				className="w-5 h-5 mr-3"
+				className="inline-block w-6 h-6 lg:mr-3"
 				aria-hidden="true"
 				name="github"
 			/>
-			GitHub
+			<span className="sr-only lg:not-sr-only">GitHub</span>
 		</a>
 	);
 };

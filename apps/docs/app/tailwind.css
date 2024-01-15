@@ -5,3 +5,18 @@
 code.hljs {
 	background: transparent !important;
 }
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6,
+.prose .magic {
+	color: #1e40af;
+	filter: sepia(1) hue-rotate(200deg) saturate(15);
+}
+
+.prose .magic {
+	font-size: 2em !important;
+}
