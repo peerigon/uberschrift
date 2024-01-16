@@ -33,8 +33,8 @@
 	"devDependencies": {
 		"@testing-library/jest-dom": "^6.2.0",
 		"@testing-library/react": "^14.1.2",
-		"@types/react": "^18.2.0",
-		"@types/react-dom": "^18.2.0",
+		"@types/react": "^18.2.48",
+		"@types/react-dom": "^18.2.18",
 		"@uberschrift/eslint-config": "*",
 		"@uberschrift/tsconfig": "*",
 		"eslint": "^8.56.0",
@@ -42,11 +42,11 @@
 		"npm-run-all": "^4.1.5",
 		"react-dom": "^18.2.0",
 		"scriptlint": "^3.0.0",
-		"semantic-release": "^22.0.12",
+		"semantic-release": "^23.0.0",
 		"tsup": "^8.0.1",
 		"typescript": "^5.3.3",
 		"vite": "^5.0.11",
-		"vitest": "^1.1.3"
+		"vitest": "^1.2.0"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0"
