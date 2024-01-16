@@ -8,6 +8,8 @@ export const HxBoundary: React.FC<{ children: ReactNode }> = ({ children }) => {
 	return <Context.Provider value={level + 1}>{children}</Context.Provider>;
 };
 
+type HeadingTagName = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+
 type HxProps = HTMLProps<HTMLHeadingElement> & {
 	increment?: number;
 };
@@ -27,7 +29,7 @@ export const Hx: React.FC<HxProps> = ({ increment, ...props }) => {
 export const useHx = () => {
 	const level = useContext(Context);
 
-	const Element = level > 6 ? "h6" : `h${level}`;
+	const Element = level > 6 ? "h6" : (`h${level}` as HeadingTagName);
 
 	return {
 		Element,
