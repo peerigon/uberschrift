@@ -22,7 +22,7 @@ export const Clipboardable: React.FC<{
 				type="button"
 				aria-live="polite"
 				aria-label={copied ? "Copied!" : "Copy to clipboard"}
-				className="absolute right-2 top-[0.75rem] w-7 aspect-square rounded-md flex justify-center items-center bg-slate-600"
+				className="absolute right-2 top-[0.75rem] w-7 h-7 rounded-md flex justify-center items-center bg-slate-600"
 				onClick={() => {
 					navigator.clipboard.writeText(content);
 					setCopied(true);

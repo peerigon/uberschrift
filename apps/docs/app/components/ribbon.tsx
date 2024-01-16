@@ -14,6 +14,8 @@ export const Ribbon = () => {
 			href="https://github.com/peerigon/uberschrift/"
 			className={className}
 			aria-label="View source on GitHub"
+			target="_blank"
+			rel="noreferrer"
 		>
 			<SvgSprite
 				className="inline-block w-6 h-6 lg:mr-3"
