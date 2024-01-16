@@ -131,6 +131,28 @@ renders as:
 
 <HxBoundary>
 
+<Hx>How can I use it with my UI library? 🤔</Hx>
+
+We have examples for [Chakra UI](https://github.com/peerigon/uberschrift/tree/main/apps/vite-chakra-ui-example) and [Material UI](https://github.com/peerigon/uberschrift/tree/main/apps/vite-mui-example). Essentially you can either use the context hook `useHx` (see below) or you can leverage `Hx` into another component.
+
+Example for Chakra:
+
+```tsx
+import { Hx, HxBoundary } from "uberschrift";
+import {
+	Heading as ChakraHeading,
+	HeadingProps,
+} from "@chakra-ui/react";
+
+const Heading = (props: HeadingProps) => <ChakraHeading {...props} as={Hx} />;
+
+// …
+
+<Heading size="xl">…</Heading>
+```
+
+
+
 <Hx>How does it handle heading elements nested below the 6th level? 7️⃣</Hx>
 
 The [HTML Spec](https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements) only allows h1 through h6 as elements and for most documents this should be more than enough.

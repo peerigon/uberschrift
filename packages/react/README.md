@@ -55,3 +55,14 @@ renders as:
 ## Sponsors
 
 [<img src="https://assets.peerigon.com/peerigon/logo/peerigon-logo-flat-spinat.png" width="150" />](https://peerigon.com)
+
+---
+
+## 👩‍💻 Development
+
+```sh
+npm install
+npx turbo dev
+npx turbo test
+npx turbo build
+```
