@@ -63,4 +63,6 @@ renders as:
 ```sh
 npm install
 npx turbo dev
+npx turbo test
+npx turbo build
 ```

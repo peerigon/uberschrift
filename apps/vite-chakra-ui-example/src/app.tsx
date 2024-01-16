@@ -1,10 +1,17 @@
 import { Hx, HxBoundary } from "uberschrift";
+import {
+	Heading as ChakraHeading,
+	HeadingProps,
+	VStack,
+} from "@chakra-ui/react";
 import { SubComponent } from "./sub-component";
+
+const Heading = (props: HeadingProps) => <ChakraHeading {...props} as={Hx} />;
 
 export const App = () => {
 	return (
-		<main className="prose max-w-screen-lg m-auto py-8">
-			<Hx>Main Title (h1)</Hx>
+		<VStack as="main" align="left" maxW="2xl" py="8" mx="auto">
+			<Heading size="xl">Main Title (h1)</Heading>
 
 			<HxBoundary>
 				<p>
@@ -12,7 +19,7 @@ export const App = () => {
 					nulla aliqua tortor.
 				</p>
 
-				<Hx>Chapter 1 (h2)</Hx>
+				<Heading size="lg">Chapter 1 (h2)</Heading>
 
 				<p>
 					Senectus netus aliquet nunc egestas habitasse sapien morbi
@@ -21,7 +28,7 @@ export const App = () => {
 				</p>
 
 				<HxBoundary>
-					<Hx>Chapter 1.1 (h3)</Hx>
+					<Heading size="md">Chapter 1.1 (h3)</Heading>
 					<p>
 						Lorem ipsum dolor sit amet pulvinar venenatis eiusmod
 						feugiat dapibus duis. Aenean fusce nunc hendrerit mollis
@@ -33,7 +40,7 @@ export const App = () => {
 					<p>Lorem ipsum dolor sit amet ac consequat netus mi.</p>
 				</HxBoundary>
 
-				<Hx>Chapter 2 (h2)</Hx>
+				<Heading size="lg">Chapter 2 (h2)</Heading>
 
 				<p>
 					Urna senectus lobortis risus consequat laoreet quam volutpat
@@ -42,6 +49,6 @@ export const App = () => {
 					erat arcu adipiscing eros et libero nunc.
 				</p>
 			</HxBoundary>
-		</main>
+		</VStack>
 	);
 };
