@@ -1,10 +1,19 @@
 import { Hx, HxBoundary } from "uberschrift";
+import {
+	Typography as MuiTypography,
+	Stack,
+	TypographyProps,
+} from "@mui/material";
 import { SubComponent } from "./sub-component";
+
+const Typography = (props: TypographyProps) => (
+	<MuiTypography component={Hx} {...props} />
+);
 
 export const App = () => {
 	return (
-		<main className="prose max-w-screen-lg m-auto py-8">
-			<Hx>Vite — Main Title (h1)</Hx>
+		<Stack component="main">
+			<Typography variant="h1">MUI — Main Title (h1)</Typography>
 
 			<HxBoundary>
 				<p>
@@ -12,7 +21,7 @@ export const App = () => {
 					nulla aliqua tortor.
 				</p>
 
-				<Hx>Chapter 1 (h2)</Hx>
+				<Typography variant="h2">Chapter 1 (h2)</Typography>
 
 				<p>
 					Senectus netus aliquet nunc egestas habitasse sapien morbi
@@ -21,7 +30,7 @@ export const App = () => {
 				</p>
 
 				<HxBoundary>
-					<Hx>Chapter 1.1 (h3)</Hx>
+					<Typography variant="h3">Chapter 1.1 (h3)</Typography>
 					<p>
 						Lorem ipsum dolor sit amet pulvinar venenatis eiusmod
 						feugiat dapibus duis. Aenean fusce nunc hendrerit mollis
@@ -33,7 +42,7 @@ export const App = () => {
 					<p>Lorem ipsum dolor sit amet ac consequat netus mi.</p>
 				</HxBoundary>
 
-				<Hx>Chapter 2 (h2)</Hx>
+				<Typography variant="h2">Chapter 2 (h2)</Typography>
 
 				<p>
 					Urna senectus lobortis risus consequat laoreet quam volutpat
@@ -42,6 +51,6 @@ export const App = () => {
 					erat arcu adipiscing eros et libero nunc.
 				</p>
 			</HxBoundary>
-		</main>
+		</Stack>
 	);
 };

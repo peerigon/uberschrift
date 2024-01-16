@@ -11,7 +11,7 @@ const Heading = (props: HeadingProps) => <ChakraHeading {...props} as={Hx} />;
 export const App = () => {
 	return (
 		<VStack as="main" align="left" maxW="2xl" py="8" mx="auto">
-			<Heading size="xl">Main Title (h1)</Heading>
+			<Heading size="xl">chakra-ui — Main Title (h1)</Heading>
 
 			<HxBoundary>
 				<p>
