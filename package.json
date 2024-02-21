@@ -10,13 +10,13 @@
 	"devDependencies": {
 		"@uberschrift/eslint-config": "*",
 		"@uberschrift/tsconfig": "*",
-		"prettier": "^3.2.2",
-		"turbo": "^1.11.3"
+		"prettier": "^3.2.5",
+		"turbo": "^1.12.4"
 	},
 	"engines": {
 		"node": ">=20"
 	},
-	"packageManager": "npm@10.2.3",
+	"packageManager": "npm@10.4.0",
 	"workspaces": [
 		"apps/*",
 		"packages/*"
