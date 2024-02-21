@@ -1,6 +1,6 @@
 # `<Hx>uberschrift 🧢</Hx>`
 
-**Zero-dependeny magic heading levels for React**
+**Zero-dependency magic heading levels for React**
 
 ---
 

@@ -30,7 +30,7 @@ export const meta: MetaFunction = () => {
 		{ title: "uberschrift" },
 		{
 			name: "description",
-			content: "Zero-dependeny magic heading levels for React",
+			content: "Zero-dependency magic heading levels for React",
 		},
 	];
 };

@@ -16,7 +16,7 @@
 		"type": "git",
 		"url": "git+https://github.com/peerigon/uberschrift.git"
 	},
-	"description": "Zero-dependeny magic heading levels for React",
+	"description": "Zero-dependency magic heading levels for React",
 	"scripts": {
 		"build": "tsup src/index.ts --dts --clean --format cjs,esm",
 		"dev": "npm run build -- --watch",
