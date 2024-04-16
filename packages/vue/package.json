@@ -1,0 +1,57 @@
+{
+	"name": "uberschrift-vue",
+	"version": "0.0.0",
+	"type": "module",
+	"sideEffects": false,
+	"main": "./dist/index.js",
+	"module": "./dist/index.cjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": "./dist/index.js"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/peerigon/uberschrift.git"
+	},
+	"description": "Zero-dependency magic heading levels for React",
+	"scripts": {
+		"build": "tsup src/index.ts --dts --clean --format cjs,esm",
+		"dev": "npm run build -- --watch",
+		"prepublish": "npm run build",
+		"start": "npm run dev",
+		"test": "run-p test:*",
+		"test:lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"test:scripts": "scriptlint --strict --fix",
+		"test:types": "tsc --noEmit",
+		"test:unit": "vitest run"
+	},
+	"author": "developers@peerigon.com",
+	"license": "UNLICENSED",
+	"devDependencies": {
+		"@testing-library/jest-dom": "^6.2.0",
+		"@testing-library/react": "^14.1.2",
+		"@types/vue": "^2.0.0",
+		"@uberschrift/eslint-config": "*",
+		"@uberschrift/tsconfig": "*",
+		"eslint": "^8.56.0",
+		"jsdom": "^23.2.0",
+		"npm-run-all": "^4.1.5",
+		"scriptlint": "^3.0.0",
+		"semantic-release": "^23.0.0",
+		"tsup": "^8.0.1",
+		"typescript": "^5.3.3",
+		"vite": "^5.0.11",
+		"vitest": "^1.2.0"
+	},
+	"peerDependencies": {
+		"vue": "^3.4.21"
+	},
+	"dependencies": {
+		"@testing-library/vue": "^8.0.3",
+		"@vitejs/plugin-vue": "^5.0.4",
+		"esbuild-plugin-vue": "^0.2.4"
+	}
+}
