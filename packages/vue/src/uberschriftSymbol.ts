@@ -1,1 +1,1 @@
-export const uberschriftSymbol = Symbol();
+export const uberschriftSymbol = Symbol("level");

@@ -1,5 +1,5 @@
 {
 	"root": true,
 	"ignorePatterns": ["**/node_modules/**", "**/dist/**"],
-	"extends": ["@uberschrift/eslint-config/base.js"]
+	"extends": ["@uberschrift/eslint-config/vue.js"]
 }

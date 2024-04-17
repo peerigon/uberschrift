@@ -1,4 +1,4 @@
 {
 	"root": true,
-	"extends": ["@uberschrift/eslint-config/base.js"]
+	"extends": ["@uberschrift/eslint-config/react.js"]
 }

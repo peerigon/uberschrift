@@ -1,10 +1,10 @@
 import { describe, expect, test } from "vitest";
 import { render } from "@testing-library/vue";
-import TestCase from "./TestCase.vue";
-import { useHx } from "./useHx";
-import { uberschriftSymbol } from "./uberschriftSymbol.ts";
 import { defineComponent } from "vue";
 import { mount } from "@vue/test-utils";
+import TestCase from "./TestCase.vue";
+import { useHx } from "./useHx";
+import { uberschriftSymbol } from "./uberschriftSymbol";
 
 const elements = ["h1", "h2", "h3", "h4", "h5", "h6"];
 
@@ -35,7 +35,7 @@ describe("useHx()", () => {
 	[1, 2, 3, 4, 5, 6, 7, 8].forEach((i) => {
 		test(`level ${i}`, () => {
 			const TestComponent = defineComponent({
-				setup() {
+				setup: () => {
 					return {
 						...useHx(),
 					};
