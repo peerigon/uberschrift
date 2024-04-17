@@ -1,0 +1,4 @@
+{
+	"root": true,
+	"extends": ["@uberschrift/eslint-config/vue.js"]
+}
