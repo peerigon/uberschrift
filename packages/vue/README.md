@@ -1,6 +1,6 @@
-# `<Hx>uberschrift 🧢</Hx>`
+# `<Hx>vueberschrift 🧢</Hx>`
 
-**Zero-dependency magic heading levels for React**
+**Zero-dependency magic heading levels for Vue**
 
 ---
 
@@ -15,29 +15,33 @@
 ## 🛠️ Usage
 
 ```sh
-npm install uberschrift
+npm install vueberschrift
 ```
 
-`page.tsx`:
+`Page.vue`:
 
-```tsx
-import { Hx, HxBoundary } from "uberschrift";
+```html
+<script setup lang="ts">
+	import { Hx, HxBoundary } from "vueberschrift";
+</script>
 
-<Hx>Outside of the top level: this will be an h1</Hx>
+<template>
+	<Hx>Outside of the top level: this will be an h1</Hx>
 
-<HxBoundary>
-  <Hx>Within the top level: this will be an h2</Hx>
+	<HxBoundary>
+		<Hx>Within the top level: this will be an h2</Hx>
 
-  <HxBoundary>
-    <Hx>Within the 2nd level: this will be an h3</Hx>
+		<HxBoundary>
+			<Hx>Within the 2nd level: this will be an h3</Hx>
 
-    <HxBoundary>
-      <Hx>Within the 3rd level: this will be an h4</Hx>
-    </HxBoundary>
+			<HxBoundary>
+				<Hx>Within the 3rd level: this will be an h4</Hx>
+			</HxBoundary>
 
-    <Hx>Again within the 2nd level: this will be an h3</Hx>
-  </HxBoundary>
-</HxBoundary>
+			<Hx>Again within the 2nd level: this will be an h3</Hx>
+		</HxBoundary>
+	</HxBoundary>
+</template>
 ```
 
 renders as:

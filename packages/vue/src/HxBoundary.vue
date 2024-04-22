@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { inject, provide } from "vue";
-import { uberschriftSymbol } from "./uberschriftSymbol";
+import { uberschriftLevel } from "./uberschriftSymbol";
 
-const level = inject<number>(uberschriftSymbol, 1);
-provide(uberschriftSymbol, level + 1);
+const currentLevel = inject(uberschriftLevel, 1);
+provide(uberschriftLevel, currentLevel + 1); // provide next level
 </script>
 
 <template>
