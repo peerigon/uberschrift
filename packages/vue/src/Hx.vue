@@ -11,8 +11,8 @@ const props = withDefaults(
 	},
 );
 
-const previousLevel = inject(uberschriftLevel, 1);
-const level = previousLevel + props.increment;
+const currentLevel = inject(uberschriftLevel, 1);
+const level = currentLevel + props.increment;
 </script>
 
 <template>
