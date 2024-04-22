@@ -9,7 +9,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"uberschrift-vue": "*",
+		"vueberschrift": "*",
 		"vue": "^3.4.21"
 	},
 	"devDependencies": {
