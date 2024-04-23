@@ -1,6 +1,7 @@
 node_modules
 packages/react/dist/
 apps/**/dist/
+packages/**/dist/
 
 # misc
 .DS_Store
