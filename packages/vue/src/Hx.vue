@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { inject } from "vue";
-import { uberschriftLevel } from "./uberschriftSymbol.ts";
+import { vueberschriftLevel } from "./vueberschriftSymbol.ts";
 
 const props = withDefaults(
 	defineProps<{
@@ -11,7 +11,7 @@ const props = withDefaults(
 	},
 );
 
-const currentLevel = inject(uberschriftLevel, 1);
+const currentLevel = inject(vueberschriftLevel, 1);
 const level = currentLevel + props.increment;
 </script>
 

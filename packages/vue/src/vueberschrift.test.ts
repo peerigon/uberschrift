@@ -4,7 +4,7 @@ import { defineComponent } from "vue";
 import { mount } from "@vue/test-utils";
 import TestCase from "./TestCase.vue";
 import { useHx } from "./useHx";
-import { uberschriftSymbol } from "./uberschriftSymbol";
+import { vueberschriftSymbol } from "./vueberschriftSymbol";
 
 const elements = ["h1", "h2", "h3", "h4", "h5", "h6"];
 
@@ -45,7 +45,7 @@ describe("useHx()", () => {
 			const wrapper = mount(TestComponent, {
 				global: {
 					provide: {
-						[uberschriftSymbol]: i,
+						[vueberschriftSymbol]: i,
 					},
 				},
 			});

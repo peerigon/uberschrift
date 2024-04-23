@@ -3,6 +3,7 @@
 	"version": "2.0.0",
 	"sideEffects": false,
 	"type": "module",
+	"private": true,
 	"scripts": {
 		"build": "remix build",
 		"dev": "remix dev --manual",
