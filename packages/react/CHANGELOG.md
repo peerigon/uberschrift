@@ -4,7 +4,7 @@
 
 ### Patch Changes
 
-- 4364894: Dependency updates
+-   4364894: Dependency updates
 
 ## 1.0.0—1.1.12
 

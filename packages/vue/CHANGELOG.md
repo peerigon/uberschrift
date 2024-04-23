@@ -4,13 +4,13 @@
 
 ### Patch Changes
 
-- 4364894: Dependency updates
+-   4364894: Dependency updates
 
 ## 0.1.0
 
 ### Minor Changes
 
-- fd6debf: Substantial eco system changes:
+-   fd6debf: Substantial eco system changes:
 
-  - add vueberschrift package for Vue.js
-  - Make use of changesets
+    -   add vueberschrift package for Vue.js
+    -   Make use of changesets
