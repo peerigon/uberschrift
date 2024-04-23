@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Hx, HxBoundary } from "uberschrift-vue";
+import { Hx, HxBoundary } from "vueberschrift";
 </script>
 
 <template>
