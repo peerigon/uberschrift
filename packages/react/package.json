@@ -1,6 +1,6 @@
 {
 	"name": "uberschrift",
-	"version": "0.0.0",
+	"version": "1.1.11",
 	"type": "module",
 	"sideEffects": false,
 	"main": "./dist/index.js",
@@ -21,7 +21,7 @@
 		"build": "tsup src/index.ts --dts --clean --format cjs,esm",
 		"dev": "npm run build -- --watch",
 		"prepublish": "npm run build",
-		"release": "npm publish",
+		"release": "npm publish --dry-run",
 		"start": "npm run dev",
 		"test": "run-p test:*",
 		"test:lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
