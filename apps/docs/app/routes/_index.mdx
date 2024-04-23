@@ -1,7 +1,7 @@
 import { Hx, HxBoundary } from "uberschrift";
 import { Clipboardable } from "../components/clipboardable";
 
-Zero-dependency magic heading levels for React
+Zero-dependency magic heading levels for React and Vue.js
 
 ```tsx
 <Hx>I'm the h1!'</Hx>
@@ -66,11 +66,16 @@ uberschrift provides you with two components: one we call `<Hx>` (as in "heading
 ---
 
 <Hx>Usage 🛠️</Hx>
+<HxBoundary>
+
+<Hx>⚛️ React</Hx>
 
 <Clipboardable content="npm install uberschrift">
+
 ```sh
 npm install uberschrift
 ```
+
 </Clipboardable>
 
 <HxBoundary>
@@ -82,51 +87,84 @@ npm install uberschrift
 <Clipboardable content={`import { Hx, HxBoundary } from "uberschrift";
 
 <Hx>Outside of the top level: this will be an h1</Hx>
-
 <HxBoundary>
-  <Hx>Within the top level: this will be an h2</Hx>
-
-  <HxBoundary>
-    <Hx>Within the 2nd level: this will be an h3</Hx>
+	<Hx>Within the top level: this will be an h2</Hx>
 
     <HxBoundary>
-      <Hx>Within the 3rd level: this will be an h4</Hx>
+    	<Hx>Within the 2nd level: this will be an h3</Hx>
     </HxBoundary>
 
-    <Hx>Again within the 2nd level: this will be an h3</Hx>
-  </HxBoundary>
 </HxBoundary>`}>
 ```tsx
 import { Hx, HxBoundary } from "uberschrift";
 
 <Hx>Outside of the top level: this will be an h1</Hx>
-
 <HxBoundary>
-  <Hx>Within the top level: this will be an h2</Hx>
-
-  <HxBoundary>
-    <Hx>Within the 2nd level: this will be an h3</Hx>
+	<Hx>Within the top level: this will be an h2</Hx>
 
     <HxBoundary>
-      <Hx>Within the 3rd level: this will be an h4</Hx>
+    	<Hx>Within the 2nd level: this will be an h3</Hx>
     </HxBoundary>
 
-    <Hx>Again within the 2nd level: this will be an h3</Hx>
-  </HxBoundary>
 </HxBoundary>
 ```
 </Clipboardable>
+</HxBoundary>
+<HxBoundary>
 
-renders as:
+</HxBoundary>
+<Hx>🌲 Vue.js</Hx>
 
-```html
-<h1>Outside of the top level: this will be an h1</h1>
-<h2>Within the top level: this will be an h2</h2>
-<h3>Within the 2nd level: this will be an h3</h3>
-<h4>Within the 3rd level: this will be an h4</h4>
-<h3>Again within the 2nd level: this will be an h3</h3>
+<Clipboardable content="npm install vueberschrift">
+
+```sh
+npm install vueberschrift
 ```
 
+</Clipboardable>
+
+<HxBoundary>
+
+<Hx>Example 📇</Hx>
+
+`App.vue`:
+
+<Clipboardable content={`<script setup lang="ts">
+import { Hx, HxBoundary } from "vueberschrift";
+</script>
+
+<template>
+	<Hx>Outside of the top level: this will be an h1</Hx>
+	<HxBoundary>
+		<Hx>Within the top level: this will be an h2</Hx>
+
+    	<HxBoundary>
+    		<Hx>Within the 2nd level: this will be an h3</Hx>
+    	</HxBoundary>
+
+    </HxBoundary>
+
+</template>`}>
+```html
+<script setup lang="ts">
+import { Hx, HxBoundary } from "vueberschrift";
+</script>
+
+<template>
+	<Hx>Outside of the top level: this will be an h1</Hx>
+	<HxBoundary>
+		<Hx>Within the top level: this will be an h2</Hx>
+
+    	<HxBoundary>
+    		<Hx>Within the 2nd level: this will be an h3</Hx>
+    	</HxBoundary>
+
+    </HxBoundary>
+
+</template>
+```
+</Clipboardable>
+</HxBoundary>
 </HxBoundary>
 
 <Hx>FAQ 🤯</Hx>
@@ -141,19 +179,14 @@ Example for Chakra:
 
 ```tsx
 import { Hx, HxBoundary } from "uberschrift";
-import {
-	Heading as ChakraHeading,
-	HeadingProps,
-} from "@chakra-ui/react";
+import { Heading as ChakraHeading, HeadingProps } from "@chakra-ui/react";
 
 const Heading = (props: HeadingProps) => <ChakraHeading {...props} as={Hx} />;
 
 // …
 
-<Heading size="xl">…</Heading>
+<Heading size="xl">…</Heading>;
 ```
-
-
 
 <Hx>How does it handle heading elements nested below the 6th level? 7️⃣</Hx>
 
@@ -183,8 +216,8 @@ In fact, you can use that context with `useHx` if you need it:
 import { useHx } from "uberschrift";
 
 const {
-  Element, // string, e.g "h4"
-  level    // number => 4
+	Element, // string, e.g "h4"
+	level, // number => 4
 } = useHx();
 ```
 
@@ -200,4 +233,4 @@ const {
 
 ---
 
-[Legal Notice](https://www.peerigon.com/en/legal/)
+[Legal Notice](https://www.peerigon.com/en/legal/), reactExample
