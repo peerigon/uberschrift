@@ -1,10 +1,9 @@
 # uberschrift
 
-## 0.1.0
+## 1.0.0—1.1.11
 
-### Minor Changes
+Changelog is lost :(
 
-- fd6debf: Substantial eco system changes:
+## 1.0.0
 
-  - add vueberschrift package for Vue.js
-  - Make use of changesets
+Initial release

@@ -1,10 +1,9 @@
 # @uberschrift/tsconfig
 
-## 0.1.0
+## 2.0.0
 
-### Minor Changes
+Include vueberschrift
 
-- fd6debf: Substantial eco system changes:
+## 1.0.0
 
-  - add vueberschrift package for Vue.js
-  - Make use of changesets
+Initial release
