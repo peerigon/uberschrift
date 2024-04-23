@@ -1,5 +1,9 @@
 import { Hx, HxBoundary, useHx } from "uberschrift";
-import { Hx as HxVue, HxBoundary as HxBoundaryVue, useHx as useHxVue } from "vueberschrift";
+import {
+  Hx as HxVue,
+  HxBoundary as HxBoundaryVue,
+  useHx as useHxVue,
+} from "vueberschrift";
 import { expect, test } from "vitest";
 
 test("smoke test", () =>
@@ -13,9 +17,20 @@ test("smoke test", () =>
   }).toMatchInlineSnapshot(`
     {
       "Hx": [Function],
-      "HxVue": [Function],
       "HxBoundary": [Function],
-      "HxBoundaryVue": [Function],
+      "HxBoundaryVue": {
+        "__name": "HxBoundary",
+        "setup": [Function],
+      },
+      "HxVue": {
+        "__name": "Hx",
+        "props": {
+          "increment": {
+            "default": 0,
+          },
+        },
+        "setup": [Function],
+      },
       "useHx": [Function],
       "useHxVue": [Function],
     }
