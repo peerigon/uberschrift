@@ -6,11 +6,11 @@
 		"library.js"
 	],
 	"devDependencies": {
-		"eslint-config-peerigon": "^37.0.2",
+		"eslint-config-peerigon": "^37.2.0",
 		"eslint-plugin-jsx-a11y": "^6.8.0",
-		"eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-react": "^7.34.1",
 		"eslint-plugin-react-hooks": "^4.6.0",
-		"typescript": "^5.3.3"
+		"typescript": "^5.4.5"
 	},
 	"peerDependencies": {
 		"eslint": "^8.56.0"

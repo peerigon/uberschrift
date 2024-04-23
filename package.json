@@ -12,12 +12,12 @@
 		"@uberschrift/eslint-config": "*",
 		"@uberschrift/tsconfig": "*",
 		"prettier": "^3.2.5",
-		"turbo": "^1.12.4"
+		"turbo": "^1.13.2"
 	},
 	"engines": {
 		"node": ">=20"
 	},
-	"packageManager": "npm@10.4.0",
+	"packageManager": "npm@10.5.2",
 	"workspaces": [
 		"apps/*",
 		"packages/*"
