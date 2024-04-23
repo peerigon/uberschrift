@@ -31,22 +31,21 @@
 	"author": "developers@peerigon.com",
 	"license": "UNLICENSED",
 	"devDependencies": {
-		"@testing-library/jest-dom": "^6.2.0",
-		"@testing-library/react": "^14.1.2",
-		"@types/react": "^18.2.48",
-		"@types/react-dom": "^18.2.18",
+		"@testing-library/jest-dom": "^6.4.2",
+		"@testing-library/react": "^14.3.1",
+		"@types/react": "^18.2.79",
+		"@types/react-dom": "^18.2.25",
 		"@uberschrift/eslint-config": "*",
 		"@uberschrift/tsconfig": "*",
-		"eslint": "^8.56.0",
+		"eslint": "^8.57.0",
 		"jsdom": "^23.2.0",
 		"npm-run-all": "^4.1.5",
 		"react-dom": "^18.2.0",
 		"scriptlint": "^3.0.0",
-		"semantic-release": "^23.0.0",
-		"tsup": "^8.0.1",
-		"typescript": "^5.3.3",
-		"vite": "^5.0.11",
-		"vitest": "^1.2.0"
+		"tsup": "^8.0.2",
+		"typescript": "^5.4.5",
+		"vite": "^5.2.10",
+		"vitest": "^1.5.0"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0"
