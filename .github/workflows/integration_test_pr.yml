@@ -26,9 +26,5 @@ jobs:
         with:
           node-version-file: ".nvmrc"
           cache: "npm"
-      - name: 📌 npm install
-        run: npm ci --prefer-offline --no-audit
-      - name: 🔧 build
-        run: npm run build && npm run build -w docs
       - name: 🧲 run integration test script
         run: ./integration-test/run.sh local
