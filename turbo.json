@@ -8,9 +8,6 @@
 		"test": {
 			"dependsOn": ["^test", "^build"]
 		},
-		"release": {
-			"dependsOn": ["^test", "^build"]
-		},
 		"dev": {
 			"cache": false,
 			"persistent": true

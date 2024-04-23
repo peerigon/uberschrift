@@ -21,7 +21,6 @@
 		"build": "vite build",
 		"dev": "vite dev",
 		"prepublish": "npm run build",
-		"release": "npx changeset publish",
 		"start": "npm run dev",
 		"test": "run-p test:*",
 		"test:lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
