@@ -1,0 +1,24 @@
+name: "🔬 PR: integration test"
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: integration_test_main.tests@${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  integration-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🧺 checkout
+        uses: actions/checkout@v4
+      - name: 🐱 use .nvmrc
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          cache: "npm"
+      - name: 🧲 run integration test script
+        run: ./integration-test/run.sh
