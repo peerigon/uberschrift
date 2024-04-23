@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - integ-test
 
 concurrency:
   group: integration_test_main.tests@${{ github.ref }}

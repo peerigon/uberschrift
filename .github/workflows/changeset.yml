@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - integ-test
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -31,7 +30,7 @@ jobs:
         with:
           commit: "chore: 🚀 release"
           title: "chore: 🚀 release"
-          publish: npm publish
+          publish: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
