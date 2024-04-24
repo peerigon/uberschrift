@@ -69,14 +69,13 @@ npm install vueberschrift
 </script>
 
 <template>
-	<Hx>Outside of the top level: this will be an h1</Hx>
-	<HxBoundary>
-		<Hx>Within the top level: this will be an h2</Hx>
-
-		<HxBoundary>
-			<Hx>Within the 2nd level: this will be an h3</Hx>
-		</HxBoundary>
-	</HxBoundary>
+  <Hx>Outside of the top level: this will be an h1</Hx>
+  <HxBoundary>
+    <Hx>Within the top level: this will be an h2</Hx>
+    <HxBoundary>
+      <Hx>Within the 2nd level: this will be an h3</Hx>
+    </HxBoundary>
+  </HxBoundary>
 </template>
 ```
 
