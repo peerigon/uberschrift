@@ -65,7 +65,7 @@ npm install vueberschrift
 
 ```html
 <script setup lang="ts">
-	import { Hx, HxBoundary } from "vueberschrift";
+  import { Hx, HxBoundary } from "vueberschrift";
 </script>
 
 <template>
