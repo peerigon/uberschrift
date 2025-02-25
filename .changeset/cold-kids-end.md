@@ -2,4 +2,4 @@
 "uberschrift": patch
 ---
 
-Dependency updates
+Allow using any React version >= 18
