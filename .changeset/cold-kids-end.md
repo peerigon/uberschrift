@@ -1,5 +1,5 @@
 ---
-"uberschrift": minor
+"uberschrift": patch
 ---
 
 Dependency updates
